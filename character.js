@@ -35,6 +35,11 @@ function rollStat(list) {
 
 function createChar(character, list){
     character.name = readLine.question("Enter Character Name: ");
+    character.class = readLine.question("Enter Class: ");
+    character.job = readLine.question("Enter Job: ");
+    character.background = readLine.question("Enter Background: ");
+    character.skill = readLine.question("Enter Special Skill: ");
+    character.race = readLine.question("Enter Race: ");
     console.log('Rolling STR')
     character.strength= rollStat(list);
     console.log('Rolling DEX')
